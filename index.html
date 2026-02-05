@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUT AI Service - Pay with SuperTrust Token</title>
+    <meta name="description" content="AI services powered by SUT token. Chat, code review, content writing, and crypto analysis.">
+    <meta property="og:title" content="SUT AI Service">
+    <meta property="og:description" content="AI services that accept SUT token as payment. Real utility for SuperTrust.">
+    <meta property="og:type" content="website">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #fff;
+            min-height: 100vh;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .hero { text-align: center; padding: 60px 0; }
+        .hero h1 { font-size: 3em; margin-bottom: 20px; }
+        .hero h1 span { color: #00d4aa; }
+        .hero p { font-size: 1.3em; opacity: 0.9; margin-bottom: 30px; }
+        .cta-btn {
+            display: inline-block;
+            background: #00d4aa;
+            color: #1a1a2e;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 212, 170, 0.3);
+        }
+        .services { padding: 40px 0; }
+        .services h2 { text-align: center; margin-bottom: 40px; font-size: 2em; }
+        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+        .service-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .service-card:hover { transform: translateY(-5px); }
+        .service-card .icon { font-size: 2.5em; margin-bottom: 15px; }
+        .service-card h3 { margin-bottom: 10px; color: #00d4aa; }
+        .service-card .price { font-size: 1.5em; font-weight: bold; margin-top: 15px; }
+        .token-info {
+            background: rgba(0, 212, 170, 0.1);
+            border: 1px solid rgba(0, 212, 170, 0.3);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 40px 0;
+        }
+        .token-info h2 { margin-bottom: 20px; }
+        .token-info .details { display: grid; gap: 10px; }
+        .token-info .detail { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .token-info a { color: #00d4aa; }
+        .buy-links { display: flex; gap: 15px; flex-wrap: wrap; margin-top: 20px; }
+        .buy-link {
+            background: rgba(255,255,255,0.1);
+            padding: 10px 20px;
+            border-radius: 8px;
+            color: #fff;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+        .buy-link:hover { background: rgba(255,255,255,0.2); }
+        footer { text-align: center; padding: 40px 0; opacity: 0.7; }
+        .bot-link { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>🤖 <span>SUT</span> AI Service</h1>
+            <p>AI-powered services that accept SuperTrust (SUT) token as payment.<br>Real utility. Real adoption.</p>
+            <a href="https://t.me/sutisbest_bot" class="cta-btn">Try Now on Telegram →</a>
+        </div>
+
+        <div class="services">
+            <h2>Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="icon">💬</div>
+                    <h3>AI Chat</h3>
+                    <p>Conversational AI assistant for any question</p>
+                    <div class="price">1 SUT</div>
+                </div>
+                <div class="service-card">
+                    <div class="icon">💻</div>
+                    <h3>Code Review</h3>
+                    <p>Get your code reviewed and improved</p>
+                    <div class="price">5 SUT</div>
+                </div>
+                <div class="service-card">
+                    <div class="icon">✍️</div>
+                    <h3>Content Writing</h3>
+                    <p>Articles, posts, and marketing copy</p>
+                    <div class="price">3 SUT</div>
+                </div>
+                <div class="service-card">
+                    <div class="icon">📊</div>
+                    <h3>Crypto Analysis</h3>
+                    <p>Token research and market insights</p>
+                    <div class="price">10 SUT</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="token-info">
+            <h2>💎 About SUT Token</h2>
+            <div class="details">
+                <div class="detail">
+                    <span>Network</span>
+                    <span>Polygon</span>
+                </div>
+                <div class="detail">
+                    <span>Contract</span>
+                    <span><code style="font-size:0.8em">0x98965474EcBeC2F532F1f780ee37b0b05F77Ca55</code></span>
+                </div>
+                <div class="detail">
+                    <span>Chart</span>
+                    <a href="https://dexscreener.com/polygon/0x98965474EcBeC2F532F1f780ee37b0b05F77Ca55" target="_blank">DexScreener →</a>
+                </div>
+            </div>
+            <div class="buy-links">
+                <a href="https://dapp.quickswap.exchange/swap/best/POL/0x98965474EcBeC2F532F1f780ee37b0b05F77Ca55" class="buy-link" target="_blank">Buy on QuickSwap</a>
+                <a href="https://app.uniswap.org/swap?chain=polygon&outputCurrency=0x98965474EcBeC2F532F1f780ee37b0b05F77Ca55" class="buy-link" target="_blank">Buy on Uniswap</a>
+            </div>
+        </div>
+
+        <div class="bot-link" style="text-align:center">
+            <a href="https://t.me/sutisbest_bot" class="cta-btn">🚀 Start Using @sutisbest_bot</a>
+        </div>
+
+        <footer>
+            <p>Powered by AI • Accepting SUT on Polygon</p>
+            <p style="margin-top:10px">
+                <a href="https://t.me/supertrust_official" style="color:#00d4aa">Join SUT Community</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
